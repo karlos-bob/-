@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,gDAAgD;AAEhD,iCAAiC;AAOjC,8BAA8B;AAK9B,4BAA4B;AAQ5B,iCAAiC;AAKjC,2BAA2B;AAMzB,+CAA+C;AAC/C,2BAA2B;AAK3B,iCAAiC;AAKjC,4BAA4B;AAK5B,8BAA8B;AAK9B,iCAAiC",
+"sources": ["responsive_grid.scss"],
+"names": [],
+"file": "responsive_grid.css"
+}

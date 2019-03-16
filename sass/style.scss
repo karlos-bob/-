@@ -1,0 +1,416 @@
+@import 'fonts.scss';
+@import 'normalize.scss';
+@import 'responsive_grid.scss';
+
+* {
+    font-family: 'AdventPro-Regular';
+}
+//USABLE COLORS
+$primary-color:  #008287;
+
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+}
+h2 {
+    margin: 0;
+    font-size: 30px;
+    font-family: 'AdventPro-Medium';
+}
+h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+//COLORED TEXT
+.coloredPrimary {
+    color: $primary-color;
+}
+.coloredBlack {
+    color: #000000;
+}
+.coloredGray {
+    color: #555555;
+}
+
+
+//CLASSES
+.defaultBlock {
+    padding: 70px 0;
+    text-align: center;
+}
+.defaultSpan {
+    font-weight: 700;
+    font-family: 'AdventPro-Medium';
+    text-transform: uppercase;
+    font-size: 38px;
+}
+.defaultP {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'OpenSans-Regular';
+    padding-top: 25px;
+}
+.subP {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'OpenSans-Regular';
+}
+.newsDate {
+    float: right;
+    width: 111px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'AdventPro-Medium';
+}
+
+//LAYERS
+.overlayBlue {
+    background-color: rgba(0, 130, 135, 0.7);
+}
+.overlayBlack {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+//HEADER
+header {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase; 
+    border-bottom: 6px solid $primary-color;
+    padding: 19px 0 17px 0;
+        .logo {
+            line-height: 16px;
+            a {
+                color: #fff;
+            }
+            span {
+                    font-size: 32px;
+                    font-weight: bold;
+                    font-family: 'AdventPro-Bold';
+                }
+            p {
+                    font-family: 'OpenSans-Regular';
+                    margin: 0;
+             }
+        }
+        .menu {
+            ul {
+                li {
+                    font-family: 'AdventPro-Bold'; 
+                    display: inline-block;
+                    font-weight: bold;
+                    padding-right: 25px;
+                    font-size: 18px;
+                        &:hover {
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                }
+            }
+        }
+} 
+
+//SLIDER
+
+.slider {
+    border-bottom: 6px solid $primary-color;
+    .owl-carousel {
+        position: relative;
+        .owl-dots {
+            display: none;
+        }
+            .owl-prev, .owl-next {
+                color: #fff;
+                top: 45%;
+                position: absolute;
+            }
+            .owl-prev {
+                left: 2%;
+            }
+            .owl-next {
+                right: 2%;
+            }
+            i {
+                padding: 11px 15px;
+                background-color: $primary-color;
+                transition: 0.125s;
+                &:hover {
+                    -webkit-transition:-webkit-transform 0.175s linear;
+                    -moz-transform:scale(1.15);
+                    -webkit-transform:scale(1.15);
+                    transition: 0.175s;
+                    cursor: pointer;
+                }
+            }
+    }
+
+
+    .sliderItem {
+        overflow:hidden;
+        height: 450px;
+        width: 100%;
+
+        .SliderContent {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width:  100%;
+            height: 100%;
+            .sliderText {
+                text-transform: uppercase;
+                font-size: 58px;
+                color: $primary-color;
+                font-family: 'AdventPro-SemiBold';
+                span {
+                    margin: 0 10px;
+                    padding: 0 10px;
+                    background-color: $primary-color;
+                    color: #fff;
+                    font-family: 'AdventPro-Bold';
+                }
+            }
+        }
+    }
+    .sliderPic1 {
+        background: url(../images/molodyozh.jpg) right top no-repeat;
+        background-size: cover;
+    }
+    .sliderPic2 {
+        background: url(../images/5.jpg) right top no-repeat;
+        background-size: cover;
+
+    }
+    .sliderPic3 {
+        background: url(../images/url1.jpg) right top no-repeat;
+        background-size: cover;
+    }
+}
+
+
+//ABOUT COMPANY
+.aboutCompany {
+        p {
+            border-top: 1px solid  #e9e9e9;;
+            color: #555555;
+            font-weight: 400;
+        }
+}
+//OUR SERVICES
+.ourServices {
+    background-color: #008287;
+    .defaultP {
+            padding: 20px 0;
+            border-top: 1px solid #fff;
+            color: #fff;
+        }
+    .rowItem {
+        img {
+            width: 81px;
+            height: 81px;
+        }
+        .rowItemText {
+            margin-top: -10px;
+            padding-left: 5px;
+            text-align: left;
+            h2 {
+                margin: 0;
+            }
+            p{
+                margin-top:  -3px;
+                font-size: 16px;
+                font-family: 'OpenSans-Regular';
+            }
+        }
+
+    }
+}
+//BLOG AND NEWS
+.blogAndNews {
+    p{
+        border-top: 1px solid #e9e9e9;
+        font-weight: 400;
+    }
+    .newsBigItem {
+        width: 576px;
+        height: 385px;
+        padding-right: 9px
+    }
+    .newsContent {
+        text-align: left;
+        padding: 15px;
+        width: inherit;
+        position: absolute;
+        bottom: 20px;
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .newsSmallItem {
+        width: 279px;
+        height: 183px;
+            .newsContent {
+                padding: 10px;
+                bottom: 10px;
+            }
+
+    }
+    .upperRow, .lowerRow {
+        padding-left: 8px;
+    }
+    .lowerRow {
+        margin-top: 18px;
+    }
+    .NewsBigPic {
+        background: url(../images/url.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .NewsSmallPic1 {
+        background: url(../images/url1.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .NewsSmallPic2 {
+        background: url(../images/8a829__Cocktail-Garden-designrulz-2.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .NewsSmallPic3 {
+        background: url(../images/5.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .NewsSmallPic4 {
+        background: url(../images/Color-Pencils.jpg) center no-repeat;
+        background-size: cover;
+    }
+}
+
+//CONTACT US
+.contactUs {
+    background: url(../images/earth.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 587px;
+    border-bottom: 6px solid  #00aba9;
+
+        .overlayBlue {
+            width: inherit;
+            height: inherit;
+        }
+    .defaultP {
+        padding: 20px 0;
+        border-top: 1px solid #fff;
+    }
+    .col-md-5 {
+        padding-left: 19px;
+
+        .compTitle {     
+        text-align: left;
+        font-size: 24px;
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+         font-family: 'OpenSans-Regular'; 
+         }
+
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+
+    .adress, .phone_email {
+        display: inline-block;
+        } 
+        .adress {
+            margin-left: 0;
+            text-align: left;
+             font-size: 18px;
+             font-family: 'OpenSans-Regular'; 
+        }
+        .phone_email {
+            font-size: 16px;
+            text-align: right;
+            font-family: 'OpenSans-Regular'; 
+                a {
+                    color : #fff;
+                    text-decoration: underline;
+                }
+            } 
+        }     
+    }
+}
+footer {
+    background-color:  #000;
+    padding: 55px;
+    .col-md-5 {
+        text-align: left;
+        .menu-footer {
+            padding: 0;
+            li {
+                display: inline-block;
+                padding-right: 10px;
+                font-size: 18px;
+                a {
+                    color: #fff;
+                    span {
+                        text-align: right;
+                        font-size: 32px;
+                        font-weight: bold;
+                        font-family: 'AdventPro-Regular';
+                    }
+                }
+                .footLinks:hover {
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+    .col-md-7 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .social-list {
+            display: inline-block;
+            margin-left: 1%;
+            li {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                text-align: center;
+                font-size: 18px;
+                &:hover {
+                    -webkit-transition:-webkit-transform 0.175s linear;
+                    -moz-transform:scale(1.25);
+                    -webkit-transform:scale(1.25);
+                    transition: 0.175s;
+                    cursor: pointer;
+                }
+            }
+            .fb {
+                background-color: #2c509b;
+            }
+            .twit {
+                background-color: #1ab2e8;
+            }
+            .youtube {
+                background-color: #b30600;
+            }
+            .instagram {
+                background-color: #234260;
+            }
+            .pinterest {
+                background-color: #ca1b22;
+            }
+        }
+        .copyright {
+            padding-top: 15px;
+        }
+    }
+}
